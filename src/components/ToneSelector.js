@@ -1,4 +1,11 @@
-import { Menu, Text, Button, MenuButton, MenuList, MenuItem } from "@chakra-ui/react";
+import {
+  Menu,
+  Text,
+  Button,
+  MenuButton,
+  MenuList,
+  MenuItem,
+} from "@chakra-ui/react";
 
 import { useState } from "react";
 import colorTones from "../data/colorTones";
@@ -18,18 +25,24 @@ const ToneSelector = (props) => {
             as={Button}
             fontSize="2.5rem"
             fontWeight={400}
-            transition="0.5s all"
+            transition="0.5s background-color"
             mt={3}
             mb={4}
             p={12}
             bgColor="transparent"
             outline="1px solid #888"
-            _hover={{ bgColor: "#eee", outline: "1px solid #aaa" }}
+            _hover={{ bgColor: "#ccc", outline: "1px solid #aaa" }}
             w={500}
           >
             {tone} tones
           </MenuButton>
-          <MenuList fontSize="2rem" w={500} textAlign="center">
+          <MenuList
+            fontSize="2rem"
+            w={500}
+            textAlign="center"
+            bgColor="#bbb"
+            color="#fff"
+          >
             {Object.entries(colorTones).map(([key]) => {
               return (
                 <MenuItem
