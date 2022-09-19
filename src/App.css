@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
+
+html {
+  background-color: #d2d2d2;
+}
+
+.app {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.app-title {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 600;
+  color: #101010;
+}
