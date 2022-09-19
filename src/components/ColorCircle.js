@@ -18,11 +18,11 @@ const ColorCircle = (props) => {
 
   return (
     <Box textAlign="center">
-      <Flex fontSize="1.5rem" align="center">
-        <Text fontWeight={800} fontSize="1rem">RGB :</Text>&nbsp;{hexCode}
+      <Flex fontSize="1.6rem" align="center">
+        <Text fontWeight={400} color="#666" fontSize="0.8rem">RGB :</Text>&nbsp;{hexCode}
       </Flex>
-      <Flex fontSize="1.5rem" align="center">
-        <Text fontWeight={800} fontSize="1rem">HSL: </Text>&nbsp;hsl({props.hue}, {props.sat}%, {props.lig}%)
+      <Flex fontSize="1.6rem" align="center">
+        <Text fontWeight={400} color="#666" fontSize="0.8rem">HSL :</Text>&nbsp;hsl({props.hue}, {props.sat}%, {props.lig}%)
       </Flex>
       <Box
         m="auto"
